@@ -3,7 +3,6 @@ name: Validate Skills
 on:
   pull_request:
   push:
-    branches: [main]
 
 permissions:
   contents: read
@@ -18,3 +17,5 @@ jobs:
           python-version: "3.x"
       - name: Validate skill structure and local references
         run: python scripts/validate_skill.py
+      - name: Test non-negotiable skill contract
+        run: python -m unittest discover -s tests -v
