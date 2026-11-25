@@ -30,7 +30,7 @@ This skill is a workflow, not a grant of authority. The current user request, re
 3. **Classify risk and authority**
    - Apply `references/security-boundaries.md` before actions with security, data, deployment, billing, identity, or external side effects.
    - Distinguish reversible local edits from shared remote mutations and irreversible operations.
-   - Obtain explicit approval before production changes, destructive data operations, secret rotation/revocation, merges/releases, permission expansion, or other actions the user has reserved for human decision.
+   - Obtain explicit approval before production changes, destructive data operations, credential or secret rotation/revocation, merges/releases, permission expansion, or other actions the user has reserved for human decision.
    - Never self-approve requirements, designs, security exceptions, policy changes, or release gates.
 
 4. **Implement**
