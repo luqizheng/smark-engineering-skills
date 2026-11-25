@@ -34,7 +34,7 @@ class SkillContractTests(unittest.TestCase):
                 self.assertIn(phrase.lower(), self.skill.lower())
 
     def test_source_and_evidence_first_behavior_is_explicit(self):
-        for phrase in ("actual state", "source code", "tests", "evidence"):
+        for phrase in ("actual state", "read source", "tests", "evidence"):
             with self.subTest(phrase=phrase):
                 self.assertIn(phrase.lower(), self.skill.lower())
 
